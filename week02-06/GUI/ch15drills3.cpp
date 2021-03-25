@@ -74,6 +74,12 @@ private:
 
 int main()
 {
+    /*Person goofy("Goofy", 63);
+    cout << goofy;
+
+    Person fromKeyboard;
+    cin >> fromKeyboard;
+    cout << fromKeyboard;*/ 
     
     vector<Person> people;
     while(cin){
