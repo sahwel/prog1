@@ -73,8 +73,6 @@ int main() {
     int id;
     double vv;
 
-/*     std::cout */
-
     while(vi.size() < 10){
         std::cin >> nn >> id >> vv;
         Item newItem(nn, id, vv);
@@ -83,7 +81,6 @@ int main() {
         
     }
   
-
     //vector rendezés név szerint
 	std::sort(vi.begin(), vi.end(), Item_order_name());
     std::cout << "Sorted by name vector:" << std::endl;

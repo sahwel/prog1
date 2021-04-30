@@ -39,31 +39,28 @@ int main() {
     msi["lecture9"]=9;
     msi["lecture10"]=10;
 
-    write(msi);
+   // write(msi);
 
     msi.erase(msi.begin(), msi.end());
-    int howMany = 3;
-    write(msi);
+    int howMany =10; write(msi);
     while(msi.size() < howMany){  
     msi = addPair(msi);
     }
-    /* msi = addPair(msi);
-    msi = addPair(msi);
-    msi = addPair(msi); */
+    
     std::cout << std::endl;
     write(msi);
 
-    std::cout << sum(msi) << std::endl;
+    std::cout << "sum: " << sum(msi) << std::endl;
 
 
 	std::map<int, std::string> mis;
     for (const auto& p : msi)
 		mis[p.second]= p.first;
 
-
+   std::cout << std::endl;
     std::cout << "mis:" << std::endl;
     for (const auto& p : mis)
-		std::cout << p.first << ": " << p.second << std::endl;
+		std::cout << p.first << ": " << p.second << std::endl; 
     return 0;
 }
 
